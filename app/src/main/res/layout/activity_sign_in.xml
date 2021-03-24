@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#332973"
+    tools:context=".SignInActivity">
+
+    <ImageView
+        android:id="@+id/iconSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon_of_app" />
+
+    <TextView
+        android:id="@+id/welcomeTextSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WorldCinema"
+        android:textColor="#EE3317"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/iconSignIn"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/iconSignIn"
+        app:layout_constraintTop_toBottomOf="@+id/iconSignIn" />
+
+    <EditText
+        android:id="@+id/emailTextSignIn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:textColor="#EE3317"
+        app:layout_constraintEnd_toEndOf="@+id/welcomeTextSignIn"
+        app:layout_constraintStart_toStartOf="@+id/welcomeTextSignIn"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeTextSignIn" />
+
+    <EditText
+        android:id="@+id/passwordTextSignIn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:textColor="#EE3317"
+        app:layout_constraintEnd_toEndOf="@+id/emailTextSignIn"
+        app:layout_constraintStart_toStartOf="@+id/emailTextSignIn"
+        app:layout_constraintTop_toBottomOf="@+id/emailTextSignIn" />
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Войти"
+        android:textStyle="bold"
+        app:backgroundTint="#EE3317"
+        app:layout_constraintEnd_toEndOf="@+id/passwordTextSignIn"
+        app:layout_constraintStart_toStartOf="@+id/passwordTextSignIn"
+        app:layout_constraintTop_toBottomOf="@+id/passwordTextSignIn" />
+</androidx.constraintlayout.widget.ConstraintLayout>
